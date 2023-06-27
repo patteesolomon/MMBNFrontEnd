@@ -1,0 +1,24 @@
+Make an mmbn webgame
+
+use canvas api(phaser is kinda weird rn)
+
+3 chips
+
+one multiplayer mode
+
+one singleplayer/debug mode 
+
+music battle theme
+
+using MERN
+
+no Copilot
+
+internet allowed
+
+//=======stretch goals======//
+sfx is a plus
+more chars
+chip download api from phone link?
+more battle chips
+program mods

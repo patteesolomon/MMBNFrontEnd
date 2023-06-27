@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import GameStart from './components/GameStart';
+import styled from 'styled-components';
+import FetchUsers from './components/FetchUsers';
+// import { OnlineMode } from './components/OnlineMode';
+// import { CreateUser } from './components/CreateUser.component';
+// import { Options } from './components/Options';
+// import { getChip, getChips } from './services/chips-api';
+// import { getUser } from './services/users-api';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Router>
+          <Routes>
+            {/* debug for now game */}
+            <Route path='/' element={<FetchUsers/>} />
+            <Route path='/game' element={<GameStart/> } />
+            {/* navbar comes after*/}
+          </Routes>
+        </Router>
       </header>
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;
